@@ -108,7 +108,11 @@
   
     <section id="cardpart" class="selection cardpart">
         <div class="container-wrapper">
+<<<<<<< HEAD
            
+=======
+            <!-- Card 1 -->
+>>>>>>> 3f69592bad78dcf798d07988930b599b24a489c5
             <div class="containerr">
                 <div class="card">
                     <div class="front" style="background-image: url('Arquivos/1.png');"></div>
@@ -122,6 +126,7 @@
             </div>
   
            
+            <!-- Card 2 -->
             <div class="containerr">
                 <div class="card">
                     <div class="front" style="background-image: url('Arquivos/2.png');"></div>
@@ -133,7 +138,9 @@
                 <h4 class="card-title">Plugin PHP</h4>
             </div>
   
+
            
+            <!-- Card 3 -->
             <div class="containerr">
                 <div class="card">
                     <div class="front" style="background-image: url('Arquivos/3.png');"></div>
@@ -143,9 +150,9 @@
                     </div>   
                 </div>
                 <h4 class="card-title">Plataforma Fitness</h4>
-            </div>
+            </div>      
             
-            
+            <!-- Card 4 -->
             <div class="containerr">
                 <div class="card">
                     <div class="front" style="background-image: url('Arquivos/Mundofit.jpeg');"></div>
@@ -160,35 +167,4 @@
         </div>
     </section>
   </section>
-  <script>
-    
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('visible');
-                  }
-      });
-    }, { 
-      threshold: 0.1,
-      rootMargin: '0px 0px -50px 0px' // 
-    });
-          const elementos = [
-      ...document.querySelectorAll('section, .block, .containerr, .skillquadro, .sobre, .glass, footer')
-    ];
-    
-    elementos.forEach(el => observer.observe(el));
-  
-        let scrollTimeout;
-    window.addEventListener('scroll', () => {
-      clearTimeout(scrollTimeout);
-      scrollTimeout = setTimeout(() => {
-        document.body.classList.toggle('scrolled', window.scrollY > 100);
-      }, 100);
-    });
-  </script>
-</body>
-
-<footer>
-  <p>&copy; 2025 - Meu Portfólio | Todos os direitos reservados</p>
-</footer>
-</html>
+ 
